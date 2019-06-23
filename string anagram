@@ -1,0 +1,20 @@
+n=raw_input()
+n=int(n)
+for i in range(n):
+  str1=raw_input()
+  str1=str1.split()
+  a=str1[0]
+  b=str1[1]
+  l1=len(a)
+  l2=len(b)
+  f=0
+  if(l1==l2):
+    for i in range(l1):
+      if a[i] in b:
+        f=f+1
+    if(f==l1):
+      print("Yes")
+    else:
+      print("No")
+  else:
+    print("No")
